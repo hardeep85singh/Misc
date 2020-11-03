@@ -1,4 +1,4 @@
-package earlyJavaObjects.chapter7;
+package ListInterfaces;
 
 public class List1Test {
    public static void main(String[]args){

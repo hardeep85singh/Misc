@@ -19,4 +19,6 @@ public class ArrayPractice1 {
             System.out.print(arr[i] + ",");
         }
     }
+
+
 }

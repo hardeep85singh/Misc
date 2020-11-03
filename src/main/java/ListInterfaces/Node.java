@@ -1,4 +1,4 @@
-package earlyJavaObjects.chapter7;
+package ListInterfaces;
 
 public class Node {
     Node next;
