@@ -3,7 +3,8 @@ package ListInterfaces;
 public class List1Test {
    public static void main(String[]args){
 //       List1 list = new List1Impl();
-       List1 list = new List1ArrayImpl();
+//       List1 list = new List1ArrayImpl();
+       List1 list = new List1StackImpl();
 
        list.add(2);
        list.add(3);

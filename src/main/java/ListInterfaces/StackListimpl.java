@@ -27,12 +27,16 @@ public class StackListimpl implements Stack {
     public void pop() {
         if (head == null) {
             throw new IllegalArgumentException(
-                    "No more elements to delete/pop");
+                    "Stack is empty");
         }
         Node current = head;
+        if (current.getNext() == null) {
+            head = null;
+        }
         while (current.getNext() != null) {
             if (current.getNext().getNext() == null) {
                 current.setNext(null);
+
             } else {
                 current = current.getNext();
             }
@@ -48,14 +52,4 @@ public class StackListimpl implements Stack {
         return false;
     }
 
-    @Override
-    public void printList() {
-        Node n = head;
-        while (n != null) {
-            System.out.print(n.data + ",");
-            n = n.getNext();
-        }
-        System.out.println();
-
-    }
 }

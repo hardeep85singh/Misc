@@ -46,12 +46,4 @@ public class StackArrayImpl implements Stack {
         }
     }
 
-    @Override
-    public void printList() {
-        for (int i = 0; i < current; i++) {
-            System.out.print(arr[i] + ",");
-
-        }
-        System.out.println();
-    }
 }
