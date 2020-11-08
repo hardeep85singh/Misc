@@ -3,7 +3,7 @@ package practice.headfirstjava;
 import java.io.*;
 import java.util.Scanner;
 
-public class FileProcessing {
+public class    FileProcessing {
     public static void main(String[]args) throws IOException {
         String inputFileName = "student.txt";
         String outputFileName = "output.txt";

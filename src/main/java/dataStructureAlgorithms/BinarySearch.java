@@ -4,6 +4,7 @@ package dataStructureAlgorithms;
 public class BinarySearch {
     public int[] array;
     int size;
+    int k;
 
     public int[] sort(int[] array) {
         MergeSort mergeSort = new MergeSort();
@@ -25,6 +26,19 @@ public class BinarySearch {
             }
         }
         return -1;
+    }
+
+    public int[] rotateArray(int[] array, int k) {
+        int count = 0;
+        while (count < k) {
+            int temp = array[0];
+            for (int j = 1; j < array.length; j++) {
+                array[j - 1] = array[j];
+            }
+            array[array.length - 1] = temp;
+            count++;
+        }
+        return array;
     }
 
 }
