@@ -9,6 +9,7 @@ public class ChoiceQuestion extends Question{
         choices = new ArrayList<String>();
     }
 
+
     public void addChoice(String choice, boolean correct){
         choices.add(choice);
         if(correct){

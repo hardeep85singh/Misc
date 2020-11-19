@@ -8,6 +8,9 @@ public class Question {
         text = "";
         answer = "";
     }
+    public String addText(){
+        return text;
+    }
 
     public void setText(String text) {
         this.text = text;
